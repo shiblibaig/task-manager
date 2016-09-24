@@ -1,0 +1,187 @@
+body{
+	font-family: open sans;
+}
+#topPanel{
+	position:relative;
+	background-color: white;
+	margin-left: 2%;
+	width: 96.5%;
+	height: 10%;
+	border-bottom: solid;
+	border-color: royalblue;
+}
+
+#todopanel{
+	position:relative;
+	margin-top: 0%;
+	margin-left: 2%;
+	display: inline-block;
+	width: 62%;
+	background-color: white;
+	height: 85%;
+	overflow: auto;
+	border-right: solid;
+	border-color: royalblue;
+}
+#formDiv{
+	position: relative;
+}
+#taskKeeper{
+	position: absolute;
+	margin-top: 10%;
+	width: 100%;
+	height: 780%;
+}
+
+#donePanel{
+	position:relative;
+	margin-left: 1%;
+	margin-top: -50%;
+	display: inline-block;
+	background-color: white;
+	width: 32%;
+	height: 85%;
+
+}
+
+#doneSection{
+	background-color: #fedfff;
+	border: solid;
+	color: #223300;
+	margin-top: 15%;
+	margin-left: 5%;
+	width: 90%;
+	height: 83%;
+	overflow: auto;
+}
+#logo{
+	padding-top: 10px;
+	padding-left: 20px; 
+}
+#corner{
+	visibility: hidden;
+	position: fixed;
+	width: 20%;
+	height: 20%;
+	background-color: pink;
+	
+}
+#corner h2{
+	margin-top: 5%;
+}
+@media (max-height: 360px) {
+	#logo,#topPanel{
+		visibility: hidden;
+	}
+	#corner{
+		visibility: visible;
+	}
+}
+
+#topSection{
+	position: relative;
+	background-color: white;
+	width: 90%;
+	height: 10%;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+#h21{
+	position: absolute;
+	margin-top: 1.7%;
+	margin-left: 2%;
+}
+#form1{
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 1.5%;
+}
+
+#taskIp{
+	border: 0;
+	width: 150%;
+	height: 10%;
+	/*box-sizing: border-box;*/
+	margin-top: 2%;
+	padding: 5px 5px;
+}
+#task:focus{
+	border-color: red;
+}
+
+#addBut{
+	margin-left: 160%;
+	margin-top: -10%;
+	padding: 4px 4px;
+	border: thick;
+	font-family: time;
+	font-weight: 900;
+}
+#addBut:active{
+	background-color: black;
+	color: white;
+}
+
+::-webkit-input-placeholder {
+   color: teal;
+   font-family: time;
+}
+
+@media (max-width: 900px){
+	#taskIp{
+		margin-left: 5%;
+		width: 70%;
+	}
+	#addBut{
+		margin-left: 80%;
+	}
+}
+
+
+.tasks{
+	position: relative;
+	width: 40%;
+	height: 15%;
+	overflow: auto;
+}
+.even{
+	margin-left: 55%;
+	margin-top: -8.8%;
+}
+
+.odd{
+ 	margin-left: 5%;
+	margin-top: 3%;
+}
+
+.bigsize{
+	font-size: 30px;
+}
+
+.bigsize h4{
+	margin-left: 6%;
+	margin-top: 2%;
+	margin-bottom: -2%;
+}
+
+.tasks h4{
+	margin-left: 1%;
+	margin-top: 1%;
+}
+.normal{
+
+}
+.svgodd{
+	position: relative;
+	margin-top: 1%;
+	margin-bottom: -10%;
+	margin-left: 88%;
+}
+.svgeven{
+	
+	position: relative;
+	margin-top: 1%;
+	margin-bottom: -10%;
+	margin-left: 88%;
+}

@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>To Do list</title>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body onLoad="getAll()"><!--  -->
+
+	<div id="topPanel">
+		<h2 id="logo">Logo</h2><button onclick="c()" style="margin-left: 10%; margin-top: -3.5%;">Clear</Button> <!-- <p style="margin-top: -1.5%;">This button will clear the storage of Tasks. The done tasks will not be stored becasue they are done. Null might be displayed in place of tasks once.<p> -->
+	</div>
+
+	<div id="todoPanel">
+		
+		<div id="corner">
+		<h2>Logo<h2>
+		</div>
+		<!-- For responsive needs.-->
+
+		<div id="topSection">
+			<div id="formDiv">
+				<h2 id="h21">To-Do</h2>
+				<form id="form1" action="javascript:addtask()">
+					<input id="taskIp" type="text" width="300" placeholder="Add a task to do (Limit 95 Chars)">
+					<input id="addBut" type="submit" value="Add Task">
+				</form>
+			</div>
+
+			<div id="taskKeeper">
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<div id="donePanel" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<h2 style="color: green; position: absolute; margin-left: 3%;">Done</h2>
+		<div id="doneSection">
+
+		</div>
+	</div>
+
+</body>
+</html>
